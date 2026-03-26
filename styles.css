@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.footer {
+  background-color: #0057b8;
+  padding: 32px 20px 24px;
+  color: #ffffff;
+}
+
+.footer__container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.footer__brand {
+  max-width: 500px;
+}
+
+.footer__logo {
+  margin: 0 0 16px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.footer__nav {
+  min-width: 280px;
+}
+
+.footer__nav-title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0 28px;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer__documents {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.footer__doc-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer__doc-link:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 12px 12px 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__help-text {
+  margin: 0;
+  color: #0057b8;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0057b8;
+  color: #ffffff;
+  text-decoration: none;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.footer__button:hover {
+  background-color: #00479a;
+}
+
+/* Планшет: 768px - 1049px */
+@media (max-width: 1049px) {
+  .footer {
+    padding: 28px 20px 20px;
+  }
+
+  .footer__top {
+    gap: 32px;
+  }
+
+  .footer__logo {
+    font-size: 28px;
+  }
+
+  .footer__description {
+    font-size: 16px;
+  }
+
+  .footer__nav-title {
+    font-size: 22px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
+
+  .footer__middle {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 24px;
+  }
+
+  .footer__documents {
+    gap: 24px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__button {
+    width: 100%;
+  }
+}
+
+/* Мобилка: 320px - 767px */
+@media (max-width: 767px) {
+  .footer {
+    padding: 24px 16px 16px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    gap: 28px;
+    padding-bottom: 20px;
+  }
+
+  .footer__brand {
+    max-width: 100%;
+  }
+
+  .footer__logo {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .footer__description {
+    font-size: 14px;
+  }
+
+  .footer__nav {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .footer__nav-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .footer__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer__link {
+    font-size: 14px;
+  }
+
+  .footer__middle {
+    padding: 16px 0 20px;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+
+  .footer__documents {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer__doc-link {
+    font-size: 14px;
+  }
+
+  .footer__bottom {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .footer__help-text {
+    font-size: 14px;
+  }
+
+  .footer__button {
+    width: 100%;
+    min-height: 48px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
