@@ -147,7 +147,7 @@ body {
   background-color: #00479a;
 }
 
-/* Планшет: 768px - 1049px */
+/* Планшет */
 @media (max-width: 1049px) {
   .footer {
     padding: 28px 20px 20px;
@@ -193,7 +193,7 @@ body {
   }
 }
 
-/* Мобилка: 320px - 767px */
+/* Мобилка */
 @media (max-width: 767px) {
   .footer {
     padding: 24px 16px 16px;
